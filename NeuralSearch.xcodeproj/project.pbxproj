@@ -1,0 +1,150 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  B00000000000000000000001 = {
+   isa = PBXFileReference;
+   lastKnownFileType = sourcecode.swift;
+   path = NeuralSearchApp.swift;
+   sourceTree = "<group>";
+  };
+  B00000000000000000000002 = {
+   isa = PBXFileReference;
+   lastKnownFileType = sourcecode.swift;
+   path = SearchEngine.swift;
+   sourceTree = "<group>";
+  };
+  B00000000000000000000003 = {
+   isa = PBXFileReference;
+   lastKnownFileType = sourcecode.c.h;
+   path = PKSearchIndex.h;
+   sourceTree = "<group>";
+  };
+  B00000000000000000000004 = {
+   isa = PBXFileReference;
+   lastKnownFileType = sourcecode.c.objc;
+   path = PKSearchIndex.m;
+   sourceTree = "<group>";
+  };
+  B00000000000000000000005 = {
+   isa = PBXFileReference;
+   lastKnownFileType = sourcecode.c.h;
+   path = BridgingHeader.h;
+   sourceTree = "<group>";
+  };
+  C00000000000000000000001 = {
+   isa = PBXBuildFile;
+   fileRef = B00000000000000000000001;
+  };
+  C00000000000000000000002 = {
+   isa = PBXBuildFile;
+   fileRef = B00000000000000000000002;
+  };
+  C00000000000000000000003 = {
+   isa = PBXBuildFile;
+   fileRef = B00000000000000000000004;
+  };
+  A00000000000000000000006 = {
+   isa = PBXFileReference;
+   explicitFileType = wrapper.application;
+   includeInIndex = 0;
+   path = NeuralSearch.app;
+   sourceTree = BUILT_PRODUCTS_DIR;
+  };
+  A00000000000000000000002 = {
+   isa = PBXGroup;
+   children = (A00000000000000000000003, A00000000000000000000004,);
+   sourceTree = "<group>";
+  };
+  A00000000000000000000003 = {
+   isa = PBXGroup;
+   children = (B00000000000000000000001, B00000000000000000000002, B00000000000000000000003, B00000000000000000000004, B00000000000000000000005,);
+   path = NeuralSearch;
+   sourceTree = "<group>";
+  };
+  A00000000000000000000004 = {
+   isa = PBXGroup;
+   children = (A00000000000000000000006,);
+   name = Products;
+   sourceTree = "<group>";
+  };
+  A00000000000000000000007 = {
+   isa = PBXSourcesBuildPhase;
+   buildActionMask = 2147483647;
+   files = (C00000000000000000000001, C00000000000000000000002, C00000000000000000000003,);
+   runOnlyForDeploymentPostprocessing = 0;
+  };
+  A00000000000000000000008 = {
+   isa = PBXFrameworksBuildPhase;
+   buildActionMask = 2147483647;
+   files = ();
+   runOnlyForDeploymentPostprocessing = 0;
+  };
+  A00000000000000000000009 = {
+   isa = PBXResourcesBuildPhase;
+   buildActionMask = 2147483647;
+   files = ();
+   runOnlyForDeploymentPostprocessing = 0;
+  };
+  A00000000000000000000005 = {
+   isa = PBXNativeTarget;
+   buildConfigurationList = A0000000000000000000000B;
+   buildPhases = (A00000000000000000000007, A00000000000000000000008, A00000000000000000000009,);
+   buildRules = ();
+   dependencies = ();
+   name = NeuralSearch;
+   productReference = A00000000000000000000006;
+   productName = NeuralSearch;
+   productType = "com.apple.product-type.application";
+  };
+  A00000000000000000000001 = {
+   isa = PBXProject;
+   attributes = { BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1600; TargetAttributes = { A00000000000000000000005 = { CreatedOnToolsVersion = 16.0; }; }; };
+   buildConfigurationList = A0000000000000000000000A;
+   compatibilityVersion = "Xcode 14.0";
+   developmentRegion = en;
+   hasScannedForEncodings = 0;
+   knownRegions = (en, Base,);
+   mainGroup = A00000000000000000000002;
+   productRefGroup = A00000000000000000000004;
+   projectDirPath = "";
+   projectRoot = "";
+   targets = (A00000000000000000000005,);
+  };
+  A0000000000000000000000C = {
+   isa = XCBuildConfiguration;
+   buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; DEBUG_INFORMATION_FORMAT = dwarf; GCC_OPTIMIZATION_LEVEL = 0; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; };
+   name = Debug;
+  };
+  A0000000000000000000000D = {
+   isa = XCBuildConfiguration;
+   buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; SWIFT_OPTIMIZATION_LEVEL = "-O"; };
+   name = Release;
+  };
+  A0000000000000000000000E = {
+   isa = XCBuildConfiguration;
+   buildSettings = { CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = NeuralSearch; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; PRODUCT_BUNDLE_IDENTIFIER = dev.example.NeuralSearch; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_OBJC_BRIDGING_HEADER = NeuralSearch/BridgingHeader.h; SWIFT_VERSION = 5.0; MACOSX_DEPLOYMENT_TARGET = 14.0; CLANG_ENABLE_OBJC_ARC = YES; SWIFT_EMIT_LOC_STRINGS = YES; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; };
+   name = Debug;
+  };
+  A0000000000000000000000F = {
+   isa = XCBuildConfiguration;
+   buildSettings = { CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = NeuralSearch; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; PRODUCT_BUNDLE_IDENTIFIER = dev.example.NeuralSearch; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_OBJC_BRIDGING_HEADER = NeuralSearch/BridgingHeader.h; SWIFT_VERSION = 5.0; MACOSX_DEPLOYMENT_TARGET = 14.0; CLANG_ENABLE_OBJC_ARC = YES; SWIFT_EMIT_LOC_STRINGS = YES; TARGETED_DEVICE_FAMILY = "1,2"; };
+   name = Release;
+  };
+  A0000000000000000000000A = {
+   isa = XCConfigurationList;
+   buildConfigurations = (A0000000000000000000000C, A0000000000000000000000D,);
+   defaultConfigurationIsVisible = 0;
+   defaultConfigurationName = Release;
+  };
+  A0000000000000000000000B = {
+   isa = XCConfigurationList;
+   buildConfigurations = (A0000000000000000000000E, A0000000000000000000000F,);
+   defaultConfigurationIsVisible = 0;
+   defaultConfigurationName = Release;
+  };
+ };
+ rootObject = A00000000000000000000001;
+}
