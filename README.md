@@ -32,14 +32,6 @@ Supports `.txt`, `.md`, `.markdown`, `.swift`, `.m`, `.h`, `.json`, `.csv`, and 
 
 The search uses one document-level vector per file. This is a **portfolio prototype**, not a production search engine: future improvements include document chunking, a persistent index, approximate nearest-neighbor algorithms, multilingual embeddings, and evaluation datasets.
 
-## Interview discussion points
-
-- Why an Objective-C engine behind a Swift bridging header?
-- How does cosine similarity work, and what are its limits?
-- What tradeoffs do document-level embeddings have versus chunk-level embeddings?
-- How would you benchmark relevance (Recall@10), latency, and memory?
-- How would you avoid rebuilding an index on every launch?
-
 ## Troubleshooting
 
 - If your Mac says it cannot open the project, confirm Xcode (not only Command Line Tools) is installed.
